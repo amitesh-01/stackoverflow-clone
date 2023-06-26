@@ -6,17 +6,13 @@ import UsersList from "./UsersList";
 
 const Users = ({ slideIn, handleSlideIn }) => {
   const location = useLocation();
-  console.log(location);
+  //console.log(location);
   return (
     <div className="home-container-1">
       <LeftSidebar/>
       <div className="home-container-2" style={{ marginTop: "30px" }}>
-       {
-          location.pathname === '/Users' ?
-          <UsersList/>:
-          <></>
-       }
-        
+          <h1 style={{ fontWeight: "400" }}>Users</h1>
+          <UsersList/>
       </div>
     </div>
   );

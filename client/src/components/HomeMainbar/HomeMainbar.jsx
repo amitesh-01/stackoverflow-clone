@@ -10,59 +10,8 @@ const HomeMainbar=()=>{
     const navigate = useNavigate();
 
     const questionsList = useSelector(state => state.questionsReducer)
-    //console.log(questionsList)
-    // var questionsList = [{
-    //     _id:'1',
-    //     upVotes:3,
-    //     downVotes:2,
-    //     noOfAnswers:2,
-    //     questionTitle:'What is a function?',
-    //     questionBody:'It meant to be',
-    //     questionTags:['javascript','node.js','mongodb',],
-    //     userPosted:'mano',
-    //     userId:1,
-    //     askedOn:'jan 1',
-    //     answer:[{
-    //         answerBody:'answer',
-    //         userAnswered:'kumar',
-    //         answeredOn:'jan 2',
-    //         userId:2,
-    //     }],
-    // },{
-    //     _id:'2',
-    //     upVotes:0,
-    //     downVotes:0,
-    //     noOfAnswers:0,
-    //     questionTitle:'What is a function?',
-    //     questionBody:'It meant to be',
-    //     questionTags:['javascript','node.js','mongodb',],
-    //     userPosted:'mano',
-    //     userId:2,
-    //     askedOn:'jan 1',
-    //     answer:[{
-    //         answerBody:'answer',
-    //         userAnswered:'kumar',
-    //         answeredOn:'jan 2',
-    //         userId:2,
-    //     }],
-    // },{
-    //     _id:'3',
-    //     upVotes:1,
-    //     downVotes:3,
-    //     noOfAnswers:0,
-    //     questionTitle:'What is a function?',
-    //     questionBody:'It meant to be',
-    //     questionTags:['javascript','node.js','mongodb',],
-    //     userPosted:'mano',
-    //     userId:2,
-    //     askedOn:'jan 1',
-    //     answer:[{
-    //         answerBody:'answer',
-    //         userAnswered:'kumar',
-    //         answeredOn:'jan 2',
-    //         userId:2,
-    //     }],
-    // }];
+    
+   
     const checkAuth = ()=>{
         if(user===null){
             alert('login or signup to ask a question');

@@ -6,7 +6,6 @@ const auth = (req, res, next) => {
 
     let decodeData = jwt.verify(token, 'test');
     req.userId = decodeData?.id;
-
     next();
   } catch (error) {
     console.log(error);

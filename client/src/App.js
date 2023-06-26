@@ -11,10 +11,10 @@ function App() {
   const dispatch = useDispatch();
   useEffect(()=>{
     dispatch(fetchAllQuestions())
-    
+    dispatch(fetchAllUsers())
   }
   ,[dispatch])
-  dispatch(fetchAllUsers())
+  
 
   return (
 
